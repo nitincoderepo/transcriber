@@ -1,0 +1,45 @@
+# Environment variables and API keys
+.env
+.env.local
+*.env
+!.env.example
+
+# Temporary audio slices generated during transcription
+_temp_chunks/
+_temp_slices/
+*.tmp.mp3
+
+# Python bytecode and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# Output transcripts and logs
+transcript/
+*.docx
+*.txt
+*.log
+.usage_ledger.json
+*.ledger.json
+
+# Audio and media files
+*.mp3
+*.m4a
+*.wav
+*.aac
+*.flac
+*.ogg
+*.wma
+*.opus
+*.m4b
+*.webm
+*.mp4
+*.m4v
+*.mov
+*.mkv
+*.avi
+*.3gp

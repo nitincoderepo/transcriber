@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transcriber"
+version = "1.0.0"
+description = "Scalable & Secure Audio Transcription Engine with Smart FFmpeg Slicing & Gemini AI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "nitincoderepo" }
+]
+keywords = [
+    "transcription",
+    "gemini",
+    "audio",
+    "ffmpeg",
+    "docx",
+    "speech-to-text",
+    "gujarati"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = [
+    "google-genai>=2.20.0",
+    "python-docx>=1.1.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+transcribe = "transcribe:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["transcriber*"]
